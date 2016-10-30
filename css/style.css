@@ -3,6 +3,7 @@ body{
 	font-size: 14px;
 	background: none;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 h2{
@@ -18,22 +19,13 @@ h2{
 	clear: both;
 }
 
-/*.index-logo{
-	clear: none;
-	float: left;
-	width: 1200px;
-	height: 513px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 59px;
-}*/
-
 .img-bg {
-  background-image: url(../img/front.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  position: relative;
-  margin-bottom: 60px;
+ 	background-image: url(../img/front.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	position: relative;
+	margin-bottom: 60px;
+	margin-top: 57px;
 }
 
 .img-bg:after{
@@ -54,14 +46,12 @@ h2{
 }
 
 .name{
-	clear: none;
 	float: left;
 	width: 1200px;
 	margin-bottom: 58px;
 }
 
 .town{
-	clear: none;
 	background: #81b3d2;
 	color: #ffffff;
 	clear: both;
@@ -70,10 +60,10 @@ h2{
 	min-height: 256px;
 	margin-left: 58px;
 	margin-bottom: 60px;
+
 }
 
 .advantages-item {
-	clear: none;
 	float: left;
 	width: 380px;
 	margin-right: 20px;
@@ -85,7 +75,6 @@ h2{
 }
 
 .bridge{
-	clear: none;
 	clear: both;
 	float: left;
 	width: 1200px;
@@ -97,7 +86,6 @@ h2{
 }
 
 .advantages2-item{
-	clear: none;
 	float: left;
 	width: 380px;
 	margin-right: 20px ;
@@ -108,19 +96,55 @@ h2{
 	margin-right: o;
 }
 
+.filters{
+	background-image: url(../img/image3.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	position: relative;
+	min-height: 562px;
+	margin-bottom: 35px;
+}
+
+.infrastructure{
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 144px;
+	margin-left: 40px;
+	padding-left: 73px;
+	padding-right: 98px;
+	min-height: 160px;
+}
+.type-house{
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 164px;
+	padding-right: 325px;
+	min-height: 160px;
+}
+.prices{
+	float: right;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 328px;
+	margin-left: 40px;
+	padding-right: 73px;
+	min-height: 160px;
+}
+
+.hotels{
+	float: left;
+	margin-bottom: 62px;
+	width: 1056px;
+	min-height: 154px;
+	margin: 73px;
+}
  
 .date{
-	clear: none;
 	float: left;
 	margin-top: 49px;
 	width: 439px;
-	height: 105px;
-	padding: 197px 381px;
-}
-/*
-.map{
-	float: left;
-
 }
 
 .choose-hotel{
@@ -131,17 +155,20 @@ h2{
 	padding-right: 60px;
 	padding-top: 34px;
 	padding-bottom: 54px;
-}*/
+	background-image: url(../img/map.jpg);
+}
 
 .container {
-	clear: none;
 	margin-top: 80px;
 	padding-top:37px;
 	padding-bottom: 35px;
+	float: left;
+	width: 380px;
+	margin-right: 20px;
+	margin-bottom: 39px;
 }
 
 .hashtag {
-	clear: none;
 	float: left;
 	width: 280px;
 	margin-left: 40px;
@@ -151,7 +178,6 @@ h2{
 }
 
 .footer-social {
-	clear: none;
 	float: left;
 	width: 220px;
 	padding-left: 92px;
@@ -160,7 +186,6 @@ h2{
 }
 
 .footer-copyright {
-	clear: none;
 	float: right;
 	width: 240px;
 	padding-left: 88px;
