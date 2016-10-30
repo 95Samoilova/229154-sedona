@@ -18,7 +18,7 @@ h2{
 	clear: both;
 }
 
-.index-logo{
+/*.index-logo{
 	clear: none;
 	float: left;
 	width: 1200px;
@@ -26,18 +26,44 @@ h2{
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 59px;
+}*/
+
+.img-bg {
+  background-image: url(../img/front.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.img-bg:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 57px;
+  background-image: url(../img/front.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img-bg-logo {
+  text-align: center;
+  padding: 70px 0;
 }
 
 .name{
 	clear: none;
 	float: left;
 	width: 1200px;
-	min-height: 211px;
+	margin-bottom: 58px;
 }
 
 .town{
 	clear: none;
 	background: #81b3d2;
+	color: #ffffff;
 	clear: both;
 	float: left;
 	width: 1200px;
@@ -50,7 +76,6 @@ h2{
 	clear: none;
 	float: left;
 	width: 380px;
-	min-height: 329px;
 	margin-right: 20px;
 	margin-bottom: 39px;
 }
@@ -68,13 +93,13 @@ h2{
 	margin-left: 48px;
 	margin-bottom: 50px;
 	background: #81b3d2;
+	color: #ffffff;
 }
 
 .advantages2-item{
 	clear: none;
 	float: left;
 	width: 380px;
-	min-height: 329px;
 	margin-right: 20px ;
 	margin-bottom: 39px;
 }
