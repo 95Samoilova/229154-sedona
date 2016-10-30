@@ -1,3 +1,150 @@
 body{
 	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	background: none;
+	text-transform: uppercase;
 }
+
+h2{
+	font-size: 21px;
+}
+
+
+.main-navigation{
+	clear: none;
+	float: left;
+	width: 1130px;
+	min-height: 74px;
+	clear: both;
+}
+
+.index-logo{
+	clear: none;
+	float: left;
+	width: 1200px;
+	height: 513px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 59px;
+}
+
+.name{
+	clear: none;
+	float: left;
+	width: 1200px;
+	min-height: 211px;
+}
+
+.town{
+	clear: none;
+	background: #81b3d2;
+	clear: both;
+	float: left;
+	width: 1200px;
+	min-height: 256px;
+	margin-left: 58px;
+	margin-bottom: 60px;
+}
+
+.advantages-item {
+	clear: none;
+	float: left;
+	width: 380px;
+	min-height: 329px;
+	margin-right: 20px;
+	margin-bottom: 39px;
+}
+
+.advantages-item: last-child {
+	margin-right: o;
+}
+
+.bridge{
+	clear: none;
+	clear: both;
+	float: left;
+	width: 1200px;
+	min-height: 256px;
+	margin-left: 48px;
+	margin-bottom: 50px;
+	background: #81b3d2;
+}
+
+.advantages2-item{
+	clear: none;
+	float: left;
+	width: 380px;
+	min-height: 329px;
+	margin-right: 20px ;
+	margin-bottom: 39px;
+}
+
+.advantages2-item: last-child {
+	margin-right: o;
+}
+
+ 
+.date{
+	clear: none;
+	float: left;
+	margin-top: 49px;
+	width: 439px;
+	height: 105px;
+	padding: 197px 381px;
+}
+/*
+.map{
+	float: left;
+
+}
+
+.choose-hotel{
+	float: left;
+	width: 575px;
+	min-height: 484px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 34px;
+	padding-bottom: 54px;
+}*/
+
+.container {
+	clear: none;
+	margin-top: 80px;
+	padding-top:37px;
+	padding-bottom: 35px;
+}
+
+.hashtag {
+	clear: none;
+	float: left;
+	width: 280px;
+	margin-left: 40px;
+	padding-left: 111px;
+	padding-right: 90px;
+	min-height: 52px;
+}
+
+.footer-social {
+	clear: none;
+	float: left;
+	width: 220px;
+	padding-left: 92px;
+	padding-right: 90px;
+	min-height: 52px;
+}
+
+.footer-copyright {
+	clear: none;
+	float: right;
+	width: 240px;
+	padding-left: 88px;
+	padding-right: 86px;
+	margin-right: 40px;
+	min-height: 52px;
+}
+
+.container: last-child {
+	margin-right: o;
+}
+
