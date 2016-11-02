@@ -15,6 +15,12 @@ h2{
 	width: 1200px;
 }
 
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
 .main-navigation li{
 	display: inline-block;
 	vertical-align: middle;
@@ -34,7 +40,6 @@ element.style{
 	background-position: center top;
 	position: relative;
 	margin-bottom: 60px;
-	margin-top: 57px;
 }
 
 .img-bg:after{
@@ -55,7 +60,6 @@ element.style{
 }
 
 .name{
-	float: left;
 	width: 1200px;
 	margin-bottom: 58px;
 }
@@ -63,8 +67,6 @@ element.style{
 .town{
 	background: #81b3d2;
 	color: #ffffff;
-	clear: both;
-	float: left;
 	width: 1200px;
 	min-height: 256px;
 	margin-left: 58px;
@@ -88,7 +90,7 @@ element.style{
 
 .bridge{
 	clear: both;
-	float: left;
+
 	width: 1200px;
 	min-height: 256px;
 	margin-left: 48px;
@@ -164,8 +166,6 @@ element.style{
 }
 
 .choose-hotel{
-	float: left;
-	width: 575px;
 	min-height: 484px;
 	padding-left: 60px;
 	padding-right: 60px;
@@ -187,7 +187,7 @@ element.style{
 }
 
 
-/*.hashtag {
+.hashtag {
 	float: left;
 	width: 280px;
 	margin-left: 40px;
@@ -212,4 +212,3 @@ element.style{
 	margin-right: 40px;
 	min-height: 52px;
 }
-*/
