@@ -1,6 +1,6 @@
 body{
 	font-family: 'PT Sans', sans-serif;
-	font-size: 0px;
+	font-size: 14px;
 	background: none;
 	text-transform: uppercase;
 	text-align: center;
@@ -8,6 +8,16 @@ body{
 
 h2{
 	font-size: 21px;
+}
+
+ul{
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+}
+
+p{
+	font-size: 14px;
 }
 
 .container {
@@ -39,7 +49,7 @@ element.style{
 	background-repeat: no-repeat;
 	background-position: center top;
 	position: relative;
-	margin-bottom: 60px;
+	margin-bottom: 53px;
 }
 
 .img-bg:after{
@@ -61,57 +71,41 @@ element.style{
 
 .name{
 	width: 1200px;
-	margin-bottom: 58px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 55px;
 }
 
 .town{
 	background: #81b3d2;
 	color: #ffffff;
 	width: 1200px;
-	min-height: 256px;
-	margin-left: 58px;
-	margin-bottom: 60px;
-	font-size: 14px;
-
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
 }
 
 .advantages-item {
 	float: left;
 	width: 380px;
-	margin-right: 20px;
-	margin-bottom: 39px;
-	font-size: 14px;
-	list-style: none;
-}
-
-.advantages-item: last-child {
-	margin-right: o;
+	padding-top: 40px;
+	margin-bottom: 45px;
 }
 
 .bridge{
-	clear: both;
-
 	width: 1200px;
-	min-height: 256px;
-	margin-left: 48px;
-	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
 	background: #81b3d2;
 	color: #ffffff;
-	font-size: 14px;
 }
 
 .advantages2-item{
 	float: left;
-	width: 380px;
-	margin-right: 20px ;
-	margin-bottom: 39px;
-	font-size: 14px;
-	list-style: none;
-}
-}
-
-.advantages2-item: last-child {
-	margin-right: o;
+	width: 33%;
+	padding-top: 45px;
+	background-color: #eeeeee;
+	padding-bottom: 58px;
 }
 
 .filters{
@@ -119,96 +113,64 @@ element.style{
 	background-repeat: no-repeat;
 	background-position: center top;
 	position: relative;
-	min-height: 562px;
-	margin-bottom: 35px;
 }
 
 .infrastructure{
 	float: left;
-	margin-top: 30px;
-	margin-bottom: 30px;
 	width: 144px;
-	margin-left: 40px;
-	padding-left: 73px;
-	padding-right: 98px;
-	min-height: 160px;
 }
 .type-house{
 	float: left;
-	margin-top: 30px;
-	margin-bottom: 30px;
 	width: 164px;
-	padding-right: 325px;
-	min-height: 160px;
 }
 .prices{
 	float: right;
-	margin-top: 30px;
-	margin-bottom: 30px;
 	width: 328px;
-	margin-left: 40px;
-	padding-right: 73px;
-	min-height: 160px;
 }
 
 .hotels{
-	float: left;
-	margin-bottom: 62px;
-	width: 1056px;
-	min-height: 154px;
-	margin: 73px;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 }
  
 .date{
-	float: left;
-	margin-top: 49px;
-	width: 439px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	padding-top: 58px;
 }
 
 .choose-hotel{
-	min-height: 484px;
+	/*min-height: 484px;
 	padding-left: 60px;
 	padding-right: 60px;
 	padding-top: 34px;
-	padding-bottom: 54px;
+	padding-bottom: 54px;*/
 	background-image: url(../img/map.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
 }
 
-.container {
-	margin: 0 auto;
+.main-footer{
 	width: 1200px;
+	padding-top: 40px;
 }
-
-.main-navigation li{
-	display: inline-block;
-	vertical-align: middle;
-	width: 20%;
-	font-size: 14px;
-}
-
 
 .hashtag {
 	float: left;
-	width: 280px;
-	margin-left: 40px;
-	padding-left: 111px;
-	padding-right: 90px;
+	width: 400px;
 	min-height: 52px;
 }
 
 .footer-social {
 	float: left;
-	width: 220px;
-	padding-left: 92px;
-	padding-right: 90px;
+	width: 400px;
 	min-height: 52px;
 }
 
 .footer-copyright {
 	float: right;
-	width: 240px;
-	padding-left: 88px;
-	padding-right: 86px;
-	margin-right: 40px;
+	width: 400px;
 	min-height: 52px;
 }
