@@ -5,9 +5,14 @@ body{
 	text-transform: uppercase;
 	text-align: center;
 }
+h1{
+	font-weight: bold;
+	font-size: 21px;
+}
 
 h2{
 	font-size: 21px;
+	font-weight: bold;
 }
 
 ul{
@@ -113,25 +118,37 @@ element.style{
 	background-repeat: no-repeat;
 	background-position: center top;
 	position: relative;
+	min-height: 218px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .infrastructure{
 	float: left;
-	width: 144px;
+	width: 287px;
+	color: #ffffff;
+	text-align: left;
+	padding-left: 70px;
 }
 .type-house{
 	float: left;
-	width: 164px;
+	width: 212px;
+	color: #ffffff;
+	margin-right: 212px;
+	text-align: left;
 }
 .prices{
 	float: right;
-	width: 328px;
+	width: 490px;
+	color: #ffffff;
 }
 
 .hotels{
 	width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: left;
+	padding-left: 70px;
 }
  
 .date{
@@ -139,6 +156,10 @@ element.style{
 	margin-right: auto;
 	width: 1200px;
 	padding-top: 58px;
+}
+
+.date h2{
+	font-size: 30px;
 }
 
 .choose-hotel{
@@ -161,6 +182,8 @@ element.style{
 	float: left;
 	width: 400px;
 	min-height: 52px;
+	font-size: 21px;
+	font-weight: bold;
 }
 
 .footer-social {
