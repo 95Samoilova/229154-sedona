@@ -16,6 +16,14 @@ h2{
 	font-size: 21px;
 	font-weight: bold;
 	padding-bottom: 20px;
+	padding-top: 50px;
+}
+
+h3{
+	font-size: 21px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 
 ul{
@@ -58,7 +66,7 @@ p{
 }
 
 .main-navigation a:hover {
-  background: #e1f0f8;
+  color: #81b3d2;
 }
 
 header ul li:nth-child(2) {
@@ -125,10 +133,6 @@ element.style{
 	margin-bottom: 20px;
 }
 
-.town h2{
-	padding-top: 55px;
-}
-
 .advantages-item {
 	float: left;
 	width: 380px;
@@ -150,10 +154,12 @@ element.style{
 
 .advantages2-item{
 	float: left;
-	width: 33%;
-	padding-top: 45px;
+	width: 400px;
 	background-color: #eeeeee;
-	padding-bottom: 58px;
+}
+
+.advantages2-item p{
+	color: #333333;
 }
 
 .filters{
@@ -205,6 +211,10 @@ element.style{
 	font-size: 30px;
 }
 
+.date p{
+	color: #333333;
+}
+
 .choose-hotel{
 	/*min-height: 484px;
 	padding-left: 60px;
@@ -239,6 +249,7 @@ element.style{
 	float: right;
 	width: 400px;
 	min-height: 52px;
+	font-weight: bold;
 }
 
 .social-btn{
@@ -261,4 +272,8 @@ element.style{
 
 .social-btn-yt{
 	background: #81b3d2 url("/assets/course14/avatar.png") no-repeat 50% 50%;
+}
+
+.btn a:hover {
+  color: #81b3d2;
 }
