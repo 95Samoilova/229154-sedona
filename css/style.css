@@ -69,6 +69,10 @@ p{
   color: #81b3d2;
 }
 
+.main-navigation a:active {
+	color: #b2b2b2;
+}
+
 header ul li:nth-child(2) {
   margin-right: 20%;
 }
@@ -254,24 +258,57 @@ element.style{
 
 .social-btn{
 	display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    background-color: #81b3d2 url("/assets/course14/social.png") no-repeat;
-    vertical-align: middle;
+    width: 48px;
+    height: 48px;
+    margin-right: 0 5px;
     font-size: 0;
+    vertical-align: middle;
+    background: #81b3d2 url(../img/sprite.png) no-repeat;
+}
+
+.social-btn:hover {
+	background-color: #669ec0;
+}
+
+.social-btn:active {
+	background-color: #5496bd;
+	opacity: 0.3;
 }
 
 .social-btn-tw{
-	background: #81b3d2 url("/assets/course14/avatar.png") no-repeat 50% 50%;
+	background-position: -208px 5px;
 }
 
 .social-btn-fb{
-	background: #81b3d2 url("/assets/course14/avatar.png") no-repeat 50% 50%;
+	background-position: -173px 5px;
 }
 
 .social-btn-yt{
-	background: #81b3d2 url("/assets/course14/avatar.png") no-repeat 50% 50%;
+	background-position: 8px 5px;
+}
+
+.social-btn-tw:hover{
+	background-position: -208px 5px;
+}
+
+.social-btn-fb:hover{
+	background-position: -173px 5px;
+}
+
+.social-btn-yt:hover{
+	background-position: 8px 5px;
+}
+
+.social-btn-tw:active{
+	background-position: -208px 5px;
+}
+
+.social-btn-fb:active{
+	background-position: -173px 5px;
+}
+
+.social-btn-yt:active{
+	background-position: 8px 5px;
 }
 
 .btn a:hover {
