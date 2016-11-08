@@ -1,18 +1,21 @@
 body{
-	font-family: 'PT Sans', sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
-	background: none;
+	line-height: 21px;
+	background: #ffffff;
 	text-transform: uppercase;
 	text-align: center;
 }
 h1{
 	font-weight: bold;
 	font-size: 21px;
+	padding-bottom: 12px;
 }
 
 h2{
 	font-size: 21px;
 	font-weight: bold;
+	padding-bottom: 20px;
 }
 
 ul{
@@ -23,11 +26,14 @@ ul{
 
 p{
 	font-size: 14px;
+	padding-bottom: 20px;
 }
 
 .container {
-	margin: 0 auto;
+	margin: auto;
+	padding: 0;
 	width: 1200px;
+	position: relative;
 }
 
 .clearfix:after {
@@ -38,9 +44,35 @@ p{
 
 .main-navigation li{
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: top;
 	width: 20%;
 	font-size: 14px;
+	font-weight: bold; 
+}
+
+.main-navigation a{
+    display: block;
+    padding: 18px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.main-navigation a:hover {
+  background: #e1f0f8;
+}
+
+header ul li:nth-child(2) {
+  margin-right: 20%;
+}
+
+.logo {
+  width: 138px;
+  height: 70px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -65px;
 }
 
 element.style{
@@ -54,7 +86,7 @@ element.style{
 	background-repeat: no-repeat;
 	background-position: center top;
 	position: relative;
-	margin-bottom: 53px;
+	margin-bottom: 60px;
 }
 
 .img-bg:after{
@@ -75,13 +107,16 @@ element.style{
 }
 
 .name{
-	width: 1200px;
+	display: inline;
+	vertical-align: top;
+	width: 575px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 55px;
+	line-height: 26px;
 }
 
 .town{
+	margin-top: 25px;
 	background: #81b3d2;
 	color: #ffffff;
 	width: 1200px;
@@ -90,11 +125,19 @@ element.style{
 	margin-bottom: 20px;
 }
 
+.town h2{
+	padding-top: 55px;
+}
+
 .advantages-item {
 	float: left;
 	width: 380px;
 	padding-top: 40px;
-	margin-bottom: 45px;
+	margin-bottom: 15px;
+}
+
+.advantages-item p{
+	color: #333333;
 }
 
 .bridge{
@@ -196,4 +239,26 @@ element.style{
 	float: right;
 	width: 400px;
 	min-height: 52px;
+}
+
+.social-btn{
+	display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-color: #81b3d2 url("/assets/course14/social.png") no-repeat;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+.social-btn-tw{
+	background: #81b3d2 url("/assets/course14/avatar.png") no-repeat 50% 50%;
+}
+
+.social-btn-fb{
+	background: #81b3d2 url("/assets/course14/avatar.png") no-repeat 50% 50%;
+}
+
+.social-btn-yt{
+	background: #81b3d2 url("/assets/course14/avatar.png") no-repeat 50% 50%;
 }
