@@ -45,12 +45,20 @@
 					<label><input type="checkbox" name="motel" value="motel">Мотель</label><br>
 					<label><input type="checkbox" name="apartments" value="apartments">Апартаменты</label><br>
 				</div>
-				<div class="prices">
-					<h3>Стоимость в сутки (Р):</h3>
-					<div class="scale"></div>
-					<input type="text" value="от 0">
-					<input type="text" vaue="до 3000"><br>
-					<input type="submit" value="Показать">
+				<div class="filter-range">
+					<div class="filter-range-title">Стоимость в сутки (Р):</div>
+					<div class="price-controls">
+						<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+						<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+					</div>
+					<div class="range-controls">
+						<div class="scale">
+							<div class="bar"></div>
+						</div>
+						<div class="range-toggle range-toggle-min"></div>
+						<div class="range-toggle range-toggle-max"></div>
+					</div>
+					<button class="btn-transparent" type="submit">Показать</button>
 				</div>
 			</div>
 	  		<section class="hotels clearfix container">
