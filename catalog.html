@@ -35,15 +35,15 @@
 	  		<div class="filters clearfix container"> 
 				<div class="infrastructure container">
 					<h3>Инфраструктура:</h3>
-            		<label><input type="checkbox" name="pool" value="pool">Бассейн</label><br>
-            		<label><input type="checkbox" name="parking" value="parking">Парковка</label><br>
-            		<label><input type="checkbox" name="wi-fi" value="wi-fi">Wi-fi</label><br>
+            		<input type="checkbox" name="pool" value="pool"><label for="check"><span></span>Бассейн</label><br>
+            		<input type="checkbox" name="parking" value="parking"><label for="check"><span></span>Парковка</label><br>
+            		<input type="checkbox" name="wi-fi" value="wi-fi"><label for="check"><span></span>Wi-fi</label><br>
             	</div>
 				<div class="type-house">
 					<h3>Тип жилья:</h3>
-					<label><input type="checkbox" name="hotel" value="hotel">Гостиница</label><br>
-					<label><input type="checkbox" name="motel" value="motel">Мотель</label><br>
-					<label><input type="checkbox" name="apartments" value="apartments">Апартаменты</label><br>
+					<input type="checkbox" name="hotel" value="hotel"><label for="check"><span></span>Гостиница</label><br>
+					<input type="checkbox" name="motel" value="motel"><label for="check"><span></span>Мотель</label><br>
+					<input type="checkbox" name="apartments" value="apartments"><label for="check"><span></span>Апартаменты</label><br>
 				</div>
 				<div class="filter-range">
 					<div class="filter-range-title">Стоимость в сутки (Р):</div>
@@ -61,9 +61,87 @@
 					<button class="btn-transparent" type="submit">Показать</button>
 				</div>
 			</div>
+			<div class="items">
+				<p>Найдено: 3</p>
+			</div>
+			<div class="sorting">
+				<h2>Сортировка</h2>
+	  			<ul>
+	  				<li>
+	  					<a href="#">по цене</a>
+	  				</li>
+	  				<li>
+	  					<a href="#">по типу</a>
+	  				</li>
+	  				<li>
+	  					<a href="#">по рейтингу</a>
+	  				</li>
+	  			</ul>
+  			</div>
+          <div class="logo">
+            <img src="img/logo.png" alt="logo">
+          </div>
+  			</nav>
 	  		<section class="hotels clearfix container">
-	  			<article class="hotel">
-		  			<div class="hotel-img">
+	  			<table class="hotel">
+	  				<tr>
+	  					<td></td>
+	  					<th>Amara resort&amp;spa</th>
+	  					<td></td>
+	  					<td></td>
+	  				</tr>
+	  				<tr>
+	  					<td><img src="img/amara.jpg" alt="Amara" width="135" height="90" align="left" hspace="30"></td>
+	  					<td>Гостиница</td>
+	  					<td>от 3500 руб.</td>
+	  					<td></td>
+	  				</tr>
+	  				<tr>
+	  					<td></td>
+	  					<td><a href="#" class="">Подробнее</a></td>
+	  					<td><a href="#">Забронировать</a></td>
+	  					<td>Рейтинг</td>
+	  				</tr>
+	  				<tr>
+	  					<td></td>
+	  					<th>Desert quail inn</th>
+	  					<td></td>
+	  					<td></td>
+	  				</tr>
+	  				<tr>
+	  					<td><img src="img/desert.jpg" alt="Desert" width="135" height="90" align="left" hspace="30"></td>
+	  					<td>Мотель</td>
+	  					<td>от 2000 руб.</td>
+	  					<td></td>
+	  				</tr>
+	  				<tr>
+	  					<td></td>
+	  					<td><a href="#" class="">Подробнее</a></td>
+	  					<td><a href="#">Забронировать</a></td>
+	  					<td>Рейтинг</td>
+	  				</tr>
+	  				<tr>
+	  					<td></td>
+	  					<th>Villas at poco diablo</th>
+	  					<td></td>
+	  					<td></td>
+	  				</tr>
+	  				<tr>
+	  					<td><img src="img/villas.jpg" alt="villas" width="135" height="90" align="left" hspace="30"></td>
+	  					<td>Апартаменты</td>
+	  					<td>от 4000 руб.</td>
+	  					<td></td>
+	  				</tr>
+	  				<tr>
+	  					<td></td>
+	  					<td><a href="#" class="">Подробнее</a></td>
+	  					<td><a href="#">Забронировать</a></td>
+	  					<td>Рейтинг</td>
+	  				</tr>
+	  			</table>	
+
+
+		  			<!--<div class="hotel-img">
 		  				<img src="img/amara.jpg" alt="Amara" width="135" height="90" align="left" hspace="30">
 		  			</div>
 		  			<h3>Amara resort&amp;spa</h3>
@@ -71,7 +149,7 @@
 		  			<a href="#" class="">Подробнее</a>
 		  			<div class="price">от 3500 руб.</div>
 		  			<a href="#">Забронировать</a>
-		  		</article>
+		  		
 				<article class="hotel">
 		  			<div class="hotel-img">
 		  				<img src="img/desert.jpg" alt="Desert" width="135" height="90" align="left" hspace="30">
@@ -91,7 +169,7 @@
 		  			<a href="#" class="">Подробнее</a>
 		  			<div class="price">от 4000 руб.</div>
 		  			<a href="#">Забронировать</a>
-		  		</article>
+		  		</article>-->
 	  		</section>
 
 	  	</main>
