@@ -287,6 +287,7 @@ input[type="checkbox"]:disabled + label span{
 	width: 50px;
 	margin: 0;
 	color: inherit;
+	height: 36px;
 	font: inherit;
 	background: none;
 	border: none;
@@ -344,21 +345,6 @@ input[type="checkbox"]:disabled + label span{
     color: #000000;
 }
 
-table{
-	border: 2px solid;
-	border-collapse: collapse;
-	width: 1200px;
-}
-
-td{
-    border: 2px solid black;
-    padding: 10px;
-}
-th{
-    padding: 10px;
-    border-bottom: 2px solid black;
-}
-
 .btn-transparent {
 	display: block;
 	margin: 30px auto;
@@ -379,12 +365,96 @@ th{
 	background: #ffffff;
 }
 
-.hotels{
+.items{
+	display: inline-block;
+	float: left;
 	width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-right: 72px;
+	margin-left: 72px;
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 30px;
+	padding: 32px 72px;
 	text-align: left;
-	padding-left: 70px;
+}
+
+.items span{
+	padding-right: 40px;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+span .sort {
+	padding-right: 0;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+}
+
+.items a{
+	color: #81b3d2;
+	padding-left: 30px;
+	text-decoration: none;
+	line-height: 18px;
+	font-size: 12px;
+}
+
+.hotels{
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 25px;
+	padding-top: 25px;
+	margin-left: 72px;
+	margin-right: 72px;
+	margin-bottom: 10px;
+	padding-left: 72px;
+}
+
+.hotel{
+	float: left;
+	width: 810px;
+	text-align: left;
+	padding-left: 25px;
+}
+
+.hotel h3{
+	line-height: 26px;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 5px;
+}
+
+.hotel span{
+	margin-right: 30px; 
+}
+
+.hotel a{
+	margin-top: 5px;
+	margin-right: 2px;
+	padding: 6px;
+	display: inline-block;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: bold;
+	background-color: #81b3d2;
+}
+
+.detail a{
+	background-color: #81b3d2;
+	width: 110px;
+}
+
+.reserved a{
+	background-color: #766357;
+	width: 140px;
+}
+
+.hotel-img{
+	float: left;
+	width: 135px;
+	min-height: 90px;
+
 }
  
 .date{
@@ -397,6 +467,7 @@ th{
 .date h2{
 	font-size: 30px;
 	line-height: 24px;
+	padding-bottom: 5px;
 }
 
 .date p{
@@ -411,18 +482,17 @@ th{
 }
 
 .choose-hotel-title{
-	width: 550px;
+	width: 510px;
 	background-color: #766357;
 }
 
 .choose-hotel a {
-  padding: 10px;
+  padding: 30px;
   display: inline-block;
   color: #ffffff;
   text-decoration: none;
   font-size: 21px;
   line-height: 26px;
-  min-height: 60px;
 }
 
 form {
@@ -440,6 +510,7 @@ form {
 }
 
 .form-row{
+	position: relative;
 	border: none;
 	margin-right: 10px;
 	margin-left: 10px;
@@ -467,32 +538,77 @@ form {
 
 }
 
-.font-row input.date{
-	background-image: url("../img/sprite.png");
+.icon-calendar{
+	position: absolute;
+	display: inline-block;
+	vertical-align: top;
+	width: 37px;
+	height: 38px;
+
+}
+
+.icon-calendar::after{
+	background-color: #f2f2f2;
+	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
-	background-position: -550px 5px;
+	background-position: -545px 3px;
+	cursor: pointer;
+}
+
+.counter input[type="text"]{
+	font-size: 14px;
+	line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  width: 35px;
+  padding: 0;
+  margin-left: 0;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+button[type="button"]{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	background: #f2f2f2;
+	border: none;
+	padding: 0;
+}
+
+button[type="button"] + .button-min{
+	color: #a9a9a9;
+	background-image: url(../img/sprite.png);
+	background-position: -114px 5px;
+	background-repeat: no-repeat;
 }
 
 .counter{
+	position: relative;
 	float: left;
-	width: 230px;
+	width: 200px;
 	border: none;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+.counter label{
+	padding-right: 30px;
+}
+
 .counter input[type="text"]{
 	border: none;
 	background-color: #f2f2f2;
-	width: 48px;
-	padding: 5px 10px;
+	width: 35px;
+	height: 35px;
+	margin-left: 35px;
 }
 
-buttom[type="submit"]{
+button[type="submit"] .found{
 	width: 400px;
 	min-height: 35px;
 }
-
 
 .found {
 	border: none;
@@ -531,16 +647,20 @@ buttom[type="submit"]{
 }
 
 .map {
-  padding: 100px 0;
   width: 1200px;
   min-height: 593px;
   background: #ffffff url(../img/map.jpg) no-repeat;
   margin-right: auto;
   margin-left: auto;
+  margin-top: -15px;
 }
 
 .main-footer{
 	width: 1200px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: -130px;
+	background-color: rgba(255,255,255, 0.8);
 }
 
 .hashtag {
