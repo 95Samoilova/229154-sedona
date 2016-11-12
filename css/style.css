@@ -365,33 +365,22 @@ input[type="checkbox"]:disabled + label span{
 	background: #ffffff;
 }
 
-.items{
+.sorter{
 	display: inline-block;
-	float: left;
-	width: 1200px;
-	margin-right: 72px;
-	margin-left: 72px;
 	border-bottom: 1px solid #e5e5e5;
 	margin-bottom: 30px;
 	padding: 32px 72px;
 	text-align: left;
 }
 
-.items span{
+.sorter span{
 	padding-right: 40px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
 }
 
-span .sort {
-	padding-right: 0;
-	font-size: 12px;
-	line-height: 18px;
-	font-weight: normal;
-}
-
-.items a{
+.sorter a{
 	color: #81b3d2;
 	padding-left: 30px;
 	text-decoration: none;
@@ -441,12 +430,12 @@ span .sort {
 }
 
 .detail a{
-	background-color: #81b3d2;
+	background: #81b3d2;
 	width: 110px;
 }
 
 .reserved a{
-	background-color: #766357;
+	background: #766357;
 	width: 140px;
 }
 
@@ -455,6 +444,26 @@ span .sort {
 	width: 135px;
 	min-height: 90px;
 
+}
+
+.stars{
+	display: inline-block;
+	float: right;
+	width: 120px;
+}
+
+.star span{
+	background-color: #f2f2f2;
+	font-size: 14px;
+	line-height: 21px;
+	color: #666666;
+	padding: 7px 17px;
+}
+
+.rating:before,
+.rating:after {
+	content=""
+}
 }
  
 .date{
@@ -495,7 +504,7 @@ span .sort {
   line-height: 26px;
 }
 
-form {
+.choose-hotel-popup {
   margin-left: auto;
   margin-right: auto;
   width: 570px;
@@ -508,6 +517,10 @@ form {
   min-height: 320px;
   /*display: none;*/
 }
+
+/*.choose-hotel-popup-show{
+	display: block;
+}*/
 
 .form-row{
 	position: relative;
@@ -540,6 +553,9 @@ form {
 
 .icon-calendar{
 	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
 	display: inline-block;
 	vertical-align: top;
 	width: 37px;
@@ -548,6 +564,12 @@ form {
 }
 
 .icon-calendar::after{
+	content: "";
+	width: 37px;
+	height: 36px;
+	position: absolute;
+	top: 5px;
+	left: -33px;
 	background-color: #f2f2f2;
 	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
@@ -570,18 +592,59 @@ form {
 
 button[type="button"]{
 	position: absolute;
+	z-index: 1;
 	width: 35px;
 	height: 35px;
 	background: #f2f2f2;
 	border: none;
 	padding: 0;
+	cursor: pointer;
 }
 
-button[type="button"] + .button-min{
-	color: #a9a9a9;
-	background-image: url(../img/sprite.png);
-	background-position: -114px 5px;
-	background-repeat: no-repeat;
+.button-min::after{
+	content: "";
+	width: 11px;
+	height: 3px;
+	top: 17px;
+	left: 12px;
+	position: absolute;
+	background-color: #a9a9a9;
+  	border-radius: 1px;
+}
+
+.button-min::after{
+	transform: rotate(0deg);
+}
+
+.button-max::after{
+	content: "";
+	width: 11px;
+	height: 3px;
+	top: 17px;
+	left: 12px;
+	position: absolute;
+	background-color: #a9a9a9;
+  	border-radius: 1px;
+}
+
+.button-max::after,
+.button-max::before{
+	content: "";
+	width: 11px;
+	height: 3px;
+	top: 17px;
+	left: 12px;
+	position: absolute;
+	background-color: #a9a9a9;
+  	border-radius: 1px;
+}
+
+.button-max::after{
+	transform: rotate(0deg);
+}
+
+.button-max::before{
+	transform: rotate(90deg);
 }
 
 .counter{
@@ -659,7 +722,7 @@ button[type="submit"] .found{
 	width: 1200px;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	margin-top: -130px;
+	margin-top: -120px;
 	background-color: rgba(255,255,255, 0.8);
 }
 
