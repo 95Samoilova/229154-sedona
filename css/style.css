@@ -366,7 +366,7 @@ input[type="checkbox"]:disabled + label span{
 }
 
 .sorter{
-	display: inline-block;
+	box-sizing: border-box;
 	border-bottom: 1px solid #e5e5e5;
 	margin-bottom: 30px;
 	padding: 32px 72px;
@@ -389,6 +389,7 @@ input[type="checkbox"]:disabled + label span{
 }
 
 .hotels{
+	box-sizing: border-box;
 	border-bottom: 1px solid #e5e5e5;
 	padding-bottom: 25px;
 	padding-top: 25px;
@@ -446,24 +447,18 @@ input[type="checkbox"]:disabled + label span{
 
 }
 
-.stars{
+.rating{
 	display: inline-block;
 	float: right;
 	width: 120px;
 }
 
-.star span{
+.rating span{
 	background-color: #f2f2f2;
 	font-size: 14px;
 	line-height: 21px;
 	color: #666666;
 	padding: 7px 17px;
-}
-
-.rating:before,
-.rating:after {
-	content=""
-}
 }
  
 .date{
@@ -537,7 +532,7 @@ input[type="checkbox"]:disabled + label span{
   	margin-top: 10px;
 }
 
-.form-row input[type="date"] {
+.form-row input[type="text"] {
   font-size: 14px;
   line-height: 26px;
   font-family: "PT Sans", "Arial", sans-serif;
