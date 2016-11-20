@@ -62,6 +62,7 @@ a{
 
 .main-navigation li{
 	display: inline-block;
+	float: left;
 	vertical-align: top;
 	width: 20%;
 	font-size: 14px;
@@ -95,8 +96,9 @@ a{
 	opacity: 0.3;
 }
 
-header ul li:nth-child(2){
-	margin-right: 20%;
+header ul li:nth-child(3),
+header ul li:last-child{
+	float: right;
 }
 
 .logo{
@@ -709,14 +711,40 @@ input[type="checkbox"]:checked:disabled + label span{
 	background-color: #ffffff;
 	padding: 40px 0;
 	position: absolute;
-	left: 50%;
+	/*left: 50%;*/
 	top: 100%;
-	transform: translateX(-50%);
+	/*transform: translateX(-50%);*/
 	min-height: 320px;
+	animation: movement 1.5s;
+	left: 26.3%;
 }
 
 .choose-hotel-popup-hide{
 	display: none;
+}
+
+@keyframes movement{
+	from{
+		transform: translateY(-30%);
+	}
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0.2;
+	}
+	40% {
+		opacity: 0.4;
+	}
+    60% {
+		opacity: 0.6;
+	}
+	80% {
+		opacity: 0.8;
+	}
+    100% {
+        opacity: 1;
+    }
 }
 
 .form-row{

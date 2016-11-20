@@ -143,9 +143,9 @@
     				</div>
   			</div>
     		</div>
-        <div class="map">
+        <a class="js-open-map" href="#"><div class="map">
           <p></p>
-        </div>	
+        </div></a>	
     	</main>
     	<footer class="main-footer container clearfix">
           <section class="hashtag">
@@ -182,6 +182,10 @@
             console.log("Нужно ввести даты заезда и выезда");
           }
         });
+
+        var mapOpen = document.querySelector(".js-open-map");
+        /*var mapPopup = document.querySelector(".modal-content-map");
+        var mapClose = mapPopup.querySelector(".modal-content-close");*/
       </script>
 
     </div>
