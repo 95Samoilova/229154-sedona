@@ -974,6 +974,7 @@ input[type="checkbox"]:checked:disabled+ label span {
   border: none;
   text-transform: uppercase;
   font-weight: bold;
+  outline: none;
 }
 
 .button-min{
