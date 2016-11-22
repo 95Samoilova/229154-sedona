@@ -189,11 +189,21 @@ header ul li:last-child {
 .advantages-item {
   float: left;
   width: 33.33%;
-  padding-top: 40px;
+  margin-top: 40px;
   margin-bottom: 66px;
+  background: #ffffff url(../img/food.png) no-repeat top;
+}
+
+.advantages-item:first-child{
+  background: #ffffff url(../img/house.png) no-repeat top;
+}
+
+.advantages-item:last-child{
+  background: #ffffff url(../img/souvenir.png) no-repeat top;
 }
 
 .advantages-item h3{
+  padding-top: 79px;
   margin-bottom: 18px;
 }
 
@@ -201,33 +211,6 @@ header ul li:last-child {
   color: #333333;
   padding-left: 55px;
   padding-right: 55px;
-}
-
-.advantages-house{
-  background: #ffffff url(../img/house.png) no-repeat;
-  width: 75px; 
-  height: 72px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 5px;
-}
-
-.advantages-food{
-  background: #ffffff url(../img/food.png) no-repeat;
-  width: 75px; 
-  height: 72px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 5px;
-}
-
-.advantages-souvenir{
-  background: #ffffff url(../img/souvenir.png) no-repeat;
-  width: 65px; 
-  height: 72px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 5px;
 }
 
 .bridge-img {
@@ -728,7 +711,7 @@ input[type="checkbox"]:checked:disabled+ label span {
 .stars {
   font-size: 0;
   display: inline-block;
-  text-align: center;
+  text-align: top;
   float: right;
   width: 120px;
   background: url(../img/sprite.png) no-repeat;
@@ -739,7 +722,7 @@ input[type="checkbox"]:checked:disabled+ label span {
 .stars2 {
   font-size: 0;
   display: inline-block;
-  text-align: center;
+  text-align: top;
   float: right;
   width: 120px;
   background: url(../img/sprite.png) no-repeat;
@@ -750,7 +733,7 @@ input[type="checkbox"]:checked:disabled+ label span {
 .stars3 {
   font-size: 0;
   display: inline-block;
-  text-align: center;
+  text-align: top;
   float: right;
   width: 120px;
   background: url(../img/sprite.png) no-repeat;
@@ -790,7 +773,7 @@ input[type="checkbox"]:checked:disabled+ label span {
 .choose-hotel a {
   padding: 30px;
   display: inline-block;
-  text-align: top;
+  text-align: center;
   color: #ffffff;
   text-decoration: none;
   font-size: 21px;
@@ -1031,7 +1014,7 @@ input[type="checkbox"]:checked:disabled+ label span {
 }
 
 .main-footer {
-  padding-top: 30px;
+  padding-top: 28px;
   margin-top: -120px;
   background-color: rgba(255, 255, 255, 0.8);
   min-height: 90px;
